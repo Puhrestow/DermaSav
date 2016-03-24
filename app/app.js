@@ -14,11 +14,11 @@ DermaApp.config(['$routeProvider',
       when('/products', {
         templateUrl: 'partials/derma-products.html',
         controller: 'DermaProducts'
+      }).
+      when('/cart', {
+        templateUrl: 'partials/derma-cart.html',
+        controller: 'DermaCart'
       })
-      // when('/songs/:songId', {
-      //   templateUrl: 'partials/derma-cart.html',
-      //   controller: 'DermaCart'
-      // }).
       // when('/songs/:songId', {
       //   templateUrl: 'partials/derma-checkout.html',
       //   controller: 'DermaCheckout'
