@@ -7,67 +7,42 @@
 	            <div class="col-lg-12">
 	                <h1 class="page-header">Thumbnail Gallery</h1>
 	        	</div>
+	        </div>
 
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
+	        <div class="row">
+
+
+			
+			<!-- MODAL CODE BEGINS HERE -->
+			<div class="modal fade" tabindex="-1" role="dialog" id="productModal">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">{{ modalProduct.title }}</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img ng-src={{modalProduct.imgSrc}} >
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button ng-click="addToCart(modalProduct)" type="button" class="btn btn-primary">Add to cart</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+				<!-- THIS CODE ALLOWS PRODUCT BOXES TO REPRODUCE IN A "FOR" LOOP -->
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="product in products" data-toggle="modal" data-target="#productModal">
+	                <a class="thumbnail">
+	                    <img class="responsive-dermaproduct" ng-src={{product.imgSrc}} alt="" ng-click="onClick(product)"> 
+	                    <!-- ng-click refers to the function created in DermaProducts.js controller -->
+
+	            		<h5> {{ product.title }} </h5>
 	                </a>
+
 	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail" href="#">
-	                    <img class="responsive-dermaproduct" src="http://placehold.it/300x300" alt="">
-	                </a>
-	            </div>
+	           
 	        </div>
 	</section>
 

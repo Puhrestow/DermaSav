@@ -1,9 +1,10 @@
-"use strict"
+"use strict" //NECESSARY TO USE ES6
 
 var DermaApp = angular.module("DermaApp", ['ngRoute']);
 
-DermaApp.constant("firebaseURL", "https://scorching-torch-4807.firebaseio.com");
+DermaApp.constant("firebaseURL", "https://scorching-torch-4807.firebaseio.com");//ATTACH YOUR FIREBASE URL HERE
 
+//PARTIAL CONFIGURATION
 DermaApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
@@ -28,6 +29,7 @@ DermaApp.config(['$routeProvider',
       // });  
   }]);
 
+//COMMAND USED TO RUN APP
 DermaApp.run([() => {
   console.log("app run");
 }]);

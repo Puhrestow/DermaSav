@@ -1,8 +1,7 @@
 "use strict"
 
-"$scope"
 
-
-app.controller("DermaCart", () => {
-
-});
+DermaApp.controller("DermaCart", [
+	"$scope",
+	() => {}
+]);

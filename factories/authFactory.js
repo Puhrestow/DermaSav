@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; //NECESSARY TO USE ES6
 
 DermaApp.factory("authFactory", (firebaseURL) => {
   let ref = new Firebase(firebaseURL);
