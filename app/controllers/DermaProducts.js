@@ -3,15 +3,45 @@
 
 DermaApp.controller("DermaProducts", [
 	"$scope",
-	function ($scope) {
+	"$cookies",
+	
+	function ($scope, $cookies) {
+		console.log("Entered Controller");
+		// GETOBJECT RETURNS AN ARRAY
+		console.log("Cookies!",$cookies.getObject("cart"));
+
+		Array.isArray($cookies.getObject("cart"));
+		if (!Array.isArray($cookies.getObject("cart"))) {
+			$cookies.putObject("cart", []);
+		}
+
 		$scope.onClick = function (product) {
 			console.log("onClick argument: ", product);
 			$scope.modalProduct = product;
 			//DermaApp.productModal.show({$scope: product})
 		}
+		
+		$scope.cartProducts = null;
+
+		$scope.addToCart = function (productUserClickedOn) {
+
+			// "PRODUCTUSERCLICKEDON" IS BEING PUSHED INTO THE "CART" ARRAY, WHICH IS THEN STORED INTO A COOKIE.
+			$scope.cartProducts = $cookies.getObject("cart");
+
+			$scope.cartProducts.push ({title:productUserClickedOn.title, price:productUserClickedOn.price});
+			
+			// THIS ALLOWS THE "ADD TO CART" SELECTION TO BE PLACED INTO A COOKIE.
+			$cookies.putObject("cart", $scope.cartProducts);
+			console.log("addToCart argument: ", productUserClickedOn);
+			console.log("cartProducts argument: ", $scope.cartProducts);
+			//DermaApp.productModal.show({$scope: product})
+		}	
+
+
 
 
 		$scope.modalProduct = null;
+
 
 
 		$scope.products = [

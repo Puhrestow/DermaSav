@@ -1,6 +1,6 @@
 "use strict" //NECESSARY TO USE ES6
 
-var DermaApp = angular.module("DermaApp", ['ngRoute']);
+var DermaApp = angular.module("DermaApp", ['ngRoute', 'ngCookies']);
 
 DermaApp.constant("firebaseURL", "https://scorching-torch-4807.firebaseio.com");//ATTACH YOUR FIREBASE URL HERE
 
