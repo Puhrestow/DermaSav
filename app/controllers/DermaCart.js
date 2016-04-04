@@ -4,8 +4,9 @@
 DermaApp.controller("DermaCart", [
 	"$scope",
 	"$cookies",
+	"$cookieStore",
 	
-	function ($scope, $cookies) {
+	function ($scope, $cookies, $cookieStore) {
 			
 		
 		console.log("Entered Controller");
@@ -29,6 +30,19 @@ DermaApp.controller("DermaCart", [
 
 			$cookies.putObject("cart", $scope.cartProducts);
 		}
+
+		  $scope.RemoveCookie = function (cart) {
+                 $cookieStore.remove("cart");
+                 $scope.cartProducts = $cookies.getObject('cart');
+                 // remove subTotal amount
+                 console.log('cookies', $cookies.getObject('cart'));
+                 $('checkoutModal').modal('hide');
+                 // window.location.href = '#/products';
+                console.log("$cookieStore.remove worked!", $cookieStore.remove());
+                $('body').removeClass('modal-open');
+                $('.modal-backdrop').remove();
+                window.location.href = '/#/products';
+            };
 	}
 
 ]);

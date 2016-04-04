@@ -20,10 +20,10 @@ DermaApp.config(['$routeProvider',
         templateUrl: 'partials/derma-cart.html',
         controller: 'DermaCart'
       })
-      // when('/songs/:songId', {
+      // when('/checkout', {
       //   templateUrl: 'partials/derma-checkout.html',
-      //   controller: 'DermaCheckout'
-      // }).  
+      //   controller: 'DermaCart'
+      // })  
       // otherwise({
       // 	redirectTo: '/'
       // });  

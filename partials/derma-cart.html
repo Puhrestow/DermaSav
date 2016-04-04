@@ -2,6 +2,9 @@
 
 <section>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
+
+
 	<div class="container">
 		<table id="cart" class="table table-hover table-condensed">
 			<thead>
@@ -18,15 +21,14 @@
 					<td data-th="Product">
 						<div class="row">
 							<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
-							<div class="col-sm-10">
+							<div class="col-sm-10" "col-xs-0">
 								<h4 class="nomargin">{{ product.title }}</h4>
-								
 							</div>
 						</div>
 					</td>
-					<td data-th="Price">{{ product.price }}</td>
+					<td data-th="Price Per Unit">{{ product.salePrice | currency }}</td>
 					<td data-th="Quantity">
-						<input type="number" class="form-control text-center" ng-model="product.quantity" value={{product.quantity}}>
+						<input type="number" min="0" class="form-control text-center" ng-model="product.quantity" value={{product.quantity}}>
 					</td>
 					<td data-th="Subtotal" class="text-center">{{product.salePrice * product.quantity | currency }}</td>
 					<td class="actions" data-th="">
@@ -37,15 +39,38 @@
 			</tbody>
 			<tfoot>
 				<tr class="visible-xs">
-					<td class="text-center"><strong>Total 1.99</strong></td>
+					<td class="text-center"><strong>{{ total | currency }}</strong></td>
 				</tr>
 				<tr>
-					<td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+					<td><a href="#/products" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 					<td colspan="2" class="hidden-xs"></td>
 					<td class="hidden-xs text-center"><strong>{{ total | currency }}</strong></td>
-					<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+					
+					<!-- BUTTON BELOW INTERACTS WITH CHECKOUTMODAL -->
+					<td><button class="btn btn-success btn-block" data-toggle="modal" data-target="#checkoutModal">Checkout <i class="fa fa-angle-right"></i></button></td>
 				</tr>
 		   </tfoot>
 		</table>
 	</div>
+
+	<!-- MODAL CODE BEGINS HERE -->
+			<div class="modal fade" tabindex="-1" role="dialog" id="checkoutModal">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h3 class="modal-title">Checkout Complete</h3>
+			      </div>
+			      <div class="modal-body">
+			        <h4 class="modal-checkout-description">Your product selections have been successfully submitted! Our receptionist will confirm if there is any additional information needed from you during the checkout process for your current appointment in order to schedule your upcoming treatments or product purchases. Thank you for patronage of Bella Medical Spa! </h4>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal" value="Remove Cookie" ng-click="RemoveCookie()" >Close</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
 </section>
+</div>
+<!-- onclick="location.href='#/products'" -->
