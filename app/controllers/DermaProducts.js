@@ -28,7 +28,42 @@ DermaApp.controller("DermaProducts", [
 			// "PRODUCTUSERCLICKEDON" IS BEING PUSHED INTO THE "CART" ARRAY, WHICH IS THEN STORED INTO A COOKIE.
 			$scope.cartProducts = $cookies.getObject("cart");
 
-			$scope.cartProducts.push ({title:productUserClickedOn.title, price:productUserClickedOn.price});
+			if ($scope.cartProducts.length === 0) {
+				$scope.cartProducts.push ({
+					title: productUserClickedOn.title, 
+					price: productUserClickedOn.price,
+					salePrice: productUserClickedOn.salePrice,
+					quantity: 1
+				});	
+			
+			} else {
+				var found = false;
+				var index = null;
+
+				$scope.cartProducts.forEach(function (p, i) {
+					if (productUserClickedOn.title === $scope.cartProducts[i].title) {
+						found = true;
+						index = i;
+					}
+				});
+
+				if (found) {
+					var aProductInCart = $scope.cartProducts[index];
+					aProductInCart.quantity++;
+					
+				} else {
+				
+					$scope.cartProducts.push ({
+						title: productUserClickedOn.title, 
+						price: productUserClickedOn.price,
+						salePrice: productUserClickedOn.salePrice,
+						quantity: 1
+					});	
+							
+				}
+						
+			}
+		
 			
 			// THIS ALLOWS THE "ADD TO CART" SELECTION TO BE PLACED INTO A COOKIE.
 			$cookies.putObject("cart", $scope.cartProducts);
@@ -49,7 +84,7 @@ DermaApp.controller("DermaProducts", [
 				imgSrc: "http://placehold.it/300x300",
 				title: "Botox",
 				originalPrice: "$50",
-				salePrice: "$30",	
+				salePrice: 30.0,	
 				description: "One of the most requested procedures done in our practice is now on sale! Botox can treat muscle stiffness, muscle spasms, excessive sweating, overactive bladder, or loss of bladder control. It also, more famously, prevents chronic migraine headaches and improves the appearance of wrinkles on the face. We are offering a 20-unit package for discount, which should cover most facial procedures."
 			},
 
@@ -57,7 +92,7 @@ DermaApp.controller("DermaProducts", [
 				imgSrc: "http://placehold.it/300x300",
 				title: "Dysport",
 				originalPrice: "$50",
-				salePrice: "$30",	
+				salePrice: 30.00,	
 				description: "Dysport, like Botox, is a form of botulinum toxin injected into the skin to temporarily relax the muscles that cause 'frown lines'. Unlike Botox, it is more commonly used in broader areas such as the forehead and around the mouth due to its natural propensity to spread over a wider area per injection. We are offering a 20-unit package for discount, which should cover most facial procedures." 
 			},
 
