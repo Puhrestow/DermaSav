@@ -81,7 +81,7 @@ DermaApp.controller("DermaProducts", [
 
 		$scope.products = [
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-01_zpse7degraq.jpg",
 				title: "Botox",
 				originalPrice: "$250",
 				salePrice: 180.00,	
@@ -89,7 +89,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-02_zpsbrsh52oq.jpg",
 				title: "Dysport",
 				originalPrice: "$200",
 				salePrice: 150.00,	
@@ -97,7 +97,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-03_zpsh8ewwnas.jpg",
 				title: "SkinMedica Chemical Peel",
 				originalPrice: "$100",
 				salePrice: 80.00,	
@@ -105,7 +105,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-04_zpsazgketpi.jpg",
 				title: "Microdermabrasion",
 				originalPrice: "$90",
 				salePrice: 60.00,	
@@ -113,7 +113,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-05_zps0praimbz.jpg",
 				title: "Laser Hair Removal",
 				originalPrice: "$100",
 				salePrice: 80.00,	
@@ -121,7 +121,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-06_zpstiegavjm.jpg",
 				title: "Bellafill",
 				originalPrice: "$1000",
 				salePrice: 850.00,	
@@ -129,7 +129,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-07_zps11g5flcn.jpg",
 				title: "Spider Vein Removal",
 				originalPrice: "$400",
 				salePrice: 300.00,	
@@ -137,7 +137,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-08_zpsimjjaxqs.jpg",
 				title: "Restylane/Perlane",
 				originalPrice: "$600",
 				salePrice: 500.00,	
@@ -145,7 +145,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-09_zps0fenb5ax.jpg",
 				title: "Clarisonic Brush Head Twin-Pack",
 				originalPrice: "$45",
 				salePrice: 30.00,	
@@ -153,7 +153,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-10_zpsxh3fxcsz.jpg",
 				title: "Clarisonic Mia 2",
 				originalPrice: "$150",
 				salePrice: 120.00,	
@@ -161,7 +161,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-11_zpseguzdmbk.jpg",
 				title: "Water-Assisted Liposuction",
 				originalPrice: ".01",
 				salePrice: .01,	
@@ -169,7 +169,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-12_zpsf9dmxb1g.jpg",
 				title: "One Hour Aromatherapy Massage",
 				originalPrice: "$90",
 				salePrice: 75.00,	
@@ -177,7 +177,7 @@ DermaApp.controller("DermaProducts", [
 			},
 
 			{
-				imgSrc: "http://placehold.it/300x300",
+				imgSrc: "http://img.photobucket.com/albums/v285/picturekid/DermaSavProducts-13_zpszb3d7tji.jpg",
 				title: "Makeup Service",
 				originalPrice: "$70",
 				salePrice: 55.00,	
