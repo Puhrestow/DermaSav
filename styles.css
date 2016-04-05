@@ -72,6 +72,10 @@ button, .btn.btn-warning {
 	border: 1px solid #A08863;
 }
 
+#product-page-box:hover { 
+   text-decoration: none;
+}
+
 #product-section-background {
 	background-color: rgba(210, 185, 149, 0.8);
 	border-radius: 8px;
