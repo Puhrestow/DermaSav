@@ -33,6 +33,7 @@ DermaApp.controller("DermaProducts", [
 					title: productUserClickedOn.title, 
 					price: productUserClickedOn.price,
 					salePrice: productUserClickedOn.salePrice,
+					imgSrc: productUserClickedOn.imgSrc,
 					quantity: 1
 				});	
 			
@@ -57,6 +58,7 @@ DermaApp.controller("DermaProducts", [
 						title: productUserClickedOn.title, 
 						price: productUserClickedOn.price,
 						salePrice: productUserClickedOn.salePrice,
+						imgSrc: productUserClickedOn.imgSrc,
 						quantity: 1
 					});	
 							

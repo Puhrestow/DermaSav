@@ -1,3 +1,169 @@
 body {
 	padding-top: 55px;
+	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavLoginBackground_zpsenlkhsf9.jpeg");
+	background-size: cover;
 }
+
+.navbar-default {
+	background-color: #93BCAB;
+	border-top: 2px solid #5E8774;
+	border-bottom: 4px solid #5E8774;
+	box-shadow: 0px 1px 11px 2px #333;
+}
+/*INDEX PAGE*/
+#small-dermasav-logo {
+	display: block;
+	width: 150px;
+}
+
+
+/*LOGIN PAGE*/
+
+
+#dermasav-login-logo {
+	width: 350px;
+	height: 350px;
+	display: block;
+	margin: 40px auto auto auto;
+
+}
+
+.login-text-controls input {
+     margin: 10px auto;
+   	 display: block;
+   	 max-width: 185px;
+     border-radius: 10px;
+}
+
+.login-button-controls {
+     margin: 0 auto;
+     width: 410px; 
+}
+
+#login-button, #register-button {
+	width: 200px;
+	margin-top: 20px;
+
+}
+
+#register-button, #login-button {
+	background-color: #000;
+}
+
+button, .btn.btn-warning {
+	font-family: 'Abel', sans-serif;
+}
+
+
+
+
+
+
+
+/*PRODUCT PAGE*/
+.product-learn-more {
+     margin: 0 auto;
+     display: block;
+}
+
+#product-page-box {
+	background-color: #F7F4EF;
+	box-shadow: 2px 2px 10px 2px #555;
+	border: 1px solid #A08863;
+}
+
+#product-section-background {
+	background-color: rgba(210, 185, 149, 0.8);
+	border-radius: 8px;
+	border: 1px solid #555;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	box-shadow: 0px 2px 8px 2px #444
+}
+
+#product-page-background {
+	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavLoginBackground_zpsenlkhsf9.jpeg");
+	background-size: cover;
+	position: absolute;
+	padding-top: 55px;
+	border-bottom: 1px solid black;
+	overflow: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;	
+	right: 0
+}
+
+.btn.btn-primary.product-learn-more {
+	background-color: #FF7F35;
+}
+
+.btn-primary {
+	border-color: none;
+}
+
+h1 {
+	font-family: 'Cinzel', serif;		
+}
+
+h4, h5 {
+	font-family: 'Abel', sans-serif;
+}
+
+
+/*CART PAGE*/
+
+#cart-section-background {
+	background-color: rgba(210, 185, 149, 0.8);
+	border-radius: 8px;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	border: 1px solid #555;
+	box-shadow: 0px 2px 8px 2px #222
+}
+
+#cart-page-background {
+	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavProductBackground_zpsp4ndhhax.jpeg");
+	background-size: cover;
+	position: absolute;
+	padding-top: 55px;
+	border-bottom: 1px solid black;
+	overflow: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;	
+	right: 0;
+}
+
+#small-product-image {
+	width: 100px;
+	height: 100px;
+}
+
+#small-product-image {
+
+}
+
+.user-cart-info input {
+	display: inline-block;
+} 
+
+h3 {
+	font-family: 'Cinzel', serif;		
+}
+
+
+/*MODALS*/
+
+.text-center {
+	font-family: 'Abel', sans-serif;
+}
+
+
+
+
+
+/*FONTS*/
+font-family: 'Cinzel', serif;
+font-family: 'Abel', sans-serif;
+

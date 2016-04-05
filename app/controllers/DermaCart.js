@@ -16,9 +16,12 @@ DermaApp.controller("DermaCart", [
 		$scope.cartProducts = $cookies.getObject("cart");
 		$scope.total = 0;
 
-		$scope.$watch($scope.cartProducts, function (oldValue, newValue) {
+		$scope.$watch('cartProducts', function (oldValue, newValue) {
+			$scope.total = 0;
+			
 			$scope.cartProducts.forEach(function (product) {
 				var subTotal = product.quantity * product.salePrice;
+
 				$scope.total = $scope.total + subTotal;
 			});
 		}, true);
