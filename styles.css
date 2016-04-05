@@ -47,7 +47,20 @@ body {
 }
 
 #register-button, #login-button {
-	background-color: #000;
+	background-color: #333;
+}
+
+#login-background {
+	background-color: rgba(220, 220, 220, 0.5);
+	background-size: cover;
+	position: absolute;
+	padding-top: 55px;
+	border-bottom: 1px solid black;
+	overflow: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;	
+	right: 0
 }
 
 button, .btn.btn-warning {
@@ -118,7 +131,7 @@ h4, h5 {
 /*CART PAGE*/
 
 #cart-section-background {
-	background-color: rgba(210, 185, 149, 0.8);
+	background-color: rgba(240, 224, 203, 0.9);
 	border-radius: 8px;
 	margin-top: 55px;
 	margin-bottom: 55px;
