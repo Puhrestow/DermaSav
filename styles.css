@@ -1,6 +1,6 @@
 body {
 	padding-top: 55px;
-	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavLoginBackground_zpsenlkhsf9.jpeg");
+	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavLandingPageImageV2_zpsurgtcfs1.jpg");
 	background-size: cover;
 }
 
@@ -20,19 +20,25 @@ body {
 /*LOGIN PAGE*/
 
 
-#dermasav-login-logo {
+/*#dermasav-login-logo {
 	width: 350px;
 	height: 350px;
 	display: block;
 	margin: 40px auto auto auto;
 
 }
-
+*/
 .login-text-controls input {
      margin: 10px auto;
    	 display: block;
-   	 max-width: 185px;
-     border-radius: 10px;
+   	 max-width: 300px;
+     border-radius: 1px;
+     box-shadow: 1px 3px 4px 1px #333 inset;
+     border-style: none
+}
+
+#username-box {
+	margin-top: 400px;
 }
 
 .login-button-controls {
@@ -42,16 +48,18 @@ body {
 
 #login-button, #register-button {
 	width: 200px;
+	max-height: 70px;
 	margin-top: 20px;
-
+	border-radius: 3px
 }
 
 #register-button, #login-button {
-	background-color: #333;
+	background-color: #000;
+	border-style: none;
 }
 
 #login-background {
-	background-color: rgba(220, 220, 220, 0.5);
+	background-color: rgba(220, 220, 220, 0);
 	background-size: cover;
 	position: absolute;
 	padding-top: 55px;
