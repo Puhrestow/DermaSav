@@ -18,9 +18,11 @@ body {
 
 .navbar-default .navbar-nav>li>a {
 	color: black;
-	font-size: 3em
 }
 
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: orange;
+}
 
 /*LOGIN PAGE*/
 
@@ -129,7 +131,7 @@ button, .btn.btn-warning {
 .btn.btn-primary.product-learn-more {
 	/*background-color: #aab9a2;*/
 	background-color: #ff9e3d;
-	border: 2px solid #d16900
+	border: 1px solid #d16900
 }
 
 .btn-primary {
@@ -193,6 +195,18 @@ h4, h5 {
 .user-cart-info input {
 	display: inline-block;
 } 
+
+.btn.btn-success.btn-block {
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn.btn-success.btn-block:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
 
 h3 {
 	font-family: 'Cinzel', serif;		
