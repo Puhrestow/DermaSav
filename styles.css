@@ -5,15 +5,20 @@ body {
 }
 
 .navbar-default {
-	background-color: rgba(215, 222, 211, 0.8);
-	border-top: 1px solid #4c5a44;
-	border-bottom: 2px solid #4c5a44;
+	background-color: rgba(232, 232, 232, .8);
+	border-top: 1px solid #555;
+	border-bottom: 2px solid #555;
 	box-shadow: 0px 1px 11px 2px #333;
 }
 /*INDEX PAGE*/
 #small-dermasav-logo {
 	display: block;
 	width: 150px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
+	font-size: 3em
 }
 
 
@@ -33,7 +38,7 @@ body {
    	 display: block;
    	 max-width: 300px;
      border-radius: 1px;
-     box-shadow: 1px 3px 4px 1px #333 inset;
+     box-shadow: 1px 3px 4px 1px #222 inset;
      border-style: none
 }
 
@@ -100,16 +105,16 @@ button, .btn.btn-warning {
 
 #product-section-background {
 	/*background-color: rgba(210, 185, 149, 0.8);*/
-	background-color: rgba(255, 255, 255, 0.55);
+	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
-	border: 3px solid #4c5a44;
+	border: 2px solid #555;
 	margin-top: 55px;
 	margin-bottom: 55px;
 	box-shadow: 0px 3px 8px 2px #444
 }
 
 #product-page-background {
-	background-image: url("http://img.photobucket.com/albums/v285/picturekid/GreyRoundPattern_zps9hj8cqgd.jpg");
+	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSaveProductV2Background_zpsb4adhq8f.jpg");
 	background-size: cover;
 	position: absolute;
 	padding-top: 55px;
@@ -122,8 +127,9 @@ button, .btn.btn-warning {
 }
 
 .btn.btn-primary.product-learn-more {
-	background-color: #aab9a2;
-	border: 2px solid #4c5a44
+	/*background-color: #aab9a2;*/
+	background-color: #ff9e3d;
+	border: 2px solid #d16900
 }
 
 .btn-primary {
@@ -146,16 +152,16 @@ h4, h5 {
 /*CART PAGE*/
 
 #cart-section-background {
-	background-color: rgba(240, 224, 203, 0.9);
-	border-radius: 8px;
+	background-color: rgba(240, 224, 203, 0.8);
+	border-radius: 3px;
 	margin-top: 55px;
 	margin-bottom: 55px;
 	border: 1px solid #555;
-	box-shadow: 0px 2px 8px 2px #222
+	box-shadow: 0px 2px 8px 2px #333
 }
 
 #cart-page-background {
-	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavProductBackground_zpsp4ndhhax.jpeg");
+	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavCartPageImageV2_zpslef9v953.jpg");
 	background-size: cover;
 	position: absolute;
 	padding-top: 55px;
@@ -167,13 +173,21 @@ h4, h5 {
 	right: 0;
 }
 
+#cart-input-box {
+	max-height: 35px;
+	border-radius: 3px;
+	box-shadow: 1px 3px 3px 1px #777 inset;
+	border-style: none
+}
+
 #small-product-image {
 	width: 100px;
 	height: 100px;
 }
 
-#small-product-image {
-
+#quantity-input-box {
+	box-shadow: 1px 3px 3px 1px #777 inset;
+	max-width: 60px
 }
 
 .user-cart-info input {

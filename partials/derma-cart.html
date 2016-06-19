@@ -30,7 +30,7 @@
 					</td>
 					<td data-th="Price Per Unit">{{ product.salePrice | currency }}</td>
 					<td data-th="Quantity">
-						<input type="number" min="1" class="form-control text-center" ng-model="product.quantity" value={{product.quantity}}>
+						<input id="quantity-input-box" type="number" min="1" class="form-control text-center" ng-model="product.quantity" value={{product.quantity}}>
 					</td>
 					<td data-th="Subtotal" class="text-center">{{product.salePrice * product.quantity | currency }}</td>
 					<td class="actions" data-th="">
@@ -54,12 +54,12 @@
 				<tr class="col-lg-3">
 				
 				<div class="user-cart-info">	
-					<h3>Please enter your name and email to complete the checkout process.</h3>
-					<input type="text" placeholder="First Name" required="true" class="input-lg"></input>
+					<h3>please enter your name and email to complete the checkout process.</h3>
+					<input id="cart-input-box" type="text" placeholder="First Name" required="true" class="input-lg"></input>
 					
-					<input type="text" placeholder="Last Name" required="true" class="input-lg"></input>
+					<input id="cart-input-box" type="text" placeholder="Last Name" required="true" class="input-lg"></input>
 					
-					<input type="email" placeholder="Email Address" required="true" class="input-lg"></input>
+					<input id="cart-input-box" type="email" placeholder="Email Address" required="true" class="input-lg"></input>
 				</div>	
 
 				</tr>
