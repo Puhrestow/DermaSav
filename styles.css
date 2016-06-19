@@ -2,6 +2,7 @@ body {
 	padding-top: 55px;
 	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavLandingPageImageV2_zpsurgtcfs1.jpg");
 	background-size: cover;
+	border-bottom: 2px solid black;
 }
 
 .navbar-default {
@@ -20,7 +21,11 @@ body {
 	color: black;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover {
+	color: #728381;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
 	color: orange;
 }
 
@@ -134,6 +139,12 @@ button, .btn.btn-warning {
 	border: 1px solid #d16900
 }
 
+.btn.btn-primary.product-learn-more:hover {
+	/*background-color: #aab9a2;*/
+	background-color: #474747;
+	border: 1px solid #000
+}
+
 .btn-primary {
 	border-color: none;
 }
@@ -167,7 +178,7 @@ h4, h5 {
 	background-size: cover;
 	position: absolute;
 	padding-top: 55px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	overflow: auto;
 	top: 0;
 	bottom: 0;
