@@ -10,7 +10,8 @@ DermaApp.config(['$routeProvider',
     $routeProvider.
       when('/', {
         templateUrl: 'partials/derma-login.html',
-        controller: 'DermaLogin'
+        controller: 'DermaLogin',
+
       }).    
       when('/products', {
         templateUrl: 'partials/derma-products.html',
@@ -30,6 +31,12 @@ DermaApp.config(['$routeProvider',
   }]);
 
 //COMMAND USED TO RUN APP
-DermaApp.run([() => {
+DermaApp.run(($rootScope) => {
   console.log("app run");
-}]);
+  $rootScope.$on("$routeChangeStart", (ev, next, curr) => {
+      console.log(next.$$route.originalPath);
+      var path = next.$$route.originalPath;
+      if (path === "/") $rootScope.showNav = false;
+      else $rootScope.showNav = true
+  })
+});

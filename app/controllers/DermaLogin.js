@@ -4,16 +4,19 @@
 
 DermaApp.controller("DermaLogin",
 [
+  "$rootScope"
   "$scope",
   "$location",
   "$http",
   "authFactory",
   "firebaseURL",
 
-  function ($scope, $location, $http, authFactory, firebaseURL) {
+  function ($rootScope,$scope, $location, $http, authFactory, firebaseURL) {
 
     // Local variables
     let ref = new Firebase(firebaseURL);
+
+    $rootScope.showNav = false;
 
     // Variables on $scope for use in DOM
     $scope.account = { Username: "", Password: "" };

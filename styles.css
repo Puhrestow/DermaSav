@@ -2,7 +2,7 @@ body {
 	padding-top: 55px;
 	background-image: url("http://img.photobucket.com/albums/v285/picturekid/DermaSavLandingPageImageV2_zpsurgtcfs1.jpg");
 	background-size: cover;
-	border-bottom: 2px solid black;
+	/*border-bottom: 2px solid black;*/
 }
 
 .navbar-default {

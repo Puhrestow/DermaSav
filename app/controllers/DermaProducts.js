@@ -2,13 +2,16 @@
 
 
 DermaApp.controller("DermaProducts", [
+	"$rootScope",
 	"$scope",
 	"$cookies",
 	
-	function ($scope, $cookies) {
+	function ($rootScope, $scope, $cookies) {
 		console.log("Entered Controller");
 		// GETOBJECT RETURNS AN ARRAY
 		console.log("Cookies!",$cookies.getObject("cart"));
+
+		$rootScope.showNav = true;
 
 		Array.isArray($cookies.getObject("cart"));
 		if (!Array.isArray($cookies.getObject("cart"))) {
